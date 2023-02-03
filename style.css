@@ -7,3 +7,131 @@
 }
 
 /* Write CSS code below */
+
+.main-content{
+    min-height: 1000px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 300px 700px;
+    margin: 20px auto;
+    
+}
+.left-section{
+    grid-column: span 1;
+    font-size: large;
+    font-weight: 500;
+    background-color: rgb(0,102,133);
+    color: rgb(255,255,255);
+}
+.left-content{
+    padding: 1rem;
+}
+.profile-details{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-image{
+    /* padding: 1rem; */
+    display: block;
+    margin: auto;
+    justify-content: center;
+    border: 5px solid white;
+    border-radius: 30%;
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+    cursor: grab;
+    
+    /* box-shadow: 0 0 5px 0.1px white; */
+}
+.profile-image img{
+    /* top: 0;
+    left: 0; */
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+    
+}
+.profile-image img:hover{
+   transform: scale(1.1);
+   transition: all 0.3s ease-in;
+
+}
+.name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding-bottom: 0.5rem;
+}
+.designation {
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+.description {
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+.icon{
+    border: 1px solid white;
+    display: inline-flex;
+    margin:0 20px;
+    width: 30px;
+    height: 30px;
+}
+.skills {
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+
+}
+
+.skill-name{
+    font-size: 0.65rem;
+    text-align: left;
+    padding:  0.5rem;
+}
+.progress-bar{
+    border: 1px solid white;
+    height: 4px;
+    
+}
+
+
+
+.right-main-content{
+    padding: 2rem 3rem;
+}
+
+
+.right-section{
+    grid-column: span 1 / span 2;
+    font-size: large;
+    font-weight: 500;
+    background-color: azure;
+    color: rgb(0,102,133);
+    
+}
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+@media screen and (max-width: 673px) {
+    .main-content{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    
+}
